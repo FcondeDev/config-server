@@ -12,9 +12,7 @@ spring:
       overrideSystemProperties: false
       server:
         git:
-          uri: http://gitlab.ceet/transaccionales/carroya-rest-config-server.git
-          username: transjkn
-          password: J3nk1n5c33t
+          uri: https://github.com/FcondeDev/config-server.git
           searchPaths: '{application}'
           
   profiles:
