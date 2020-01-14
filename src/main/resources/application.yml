@@ -1,0 +1,23 @@
+server:
+  port: 4000
+  servlet:
+    context-path: /config-server
+spring:
+  application:
+    name: indra-config-service
+  cloud:
+    config:
+      allowOverride: true
+      overrideNone: true
+      overrideSystemProperties: false
+      server:
+        git:
+          uri: http://gitlab.ceet/transaccionales/carroya-rest-config-server.git
+          username: transjkn
+          password: J3nk1n5c33t
+          searchPaths: '{application}'
+          
+  profiles:
+    active: dev
+    
+    
